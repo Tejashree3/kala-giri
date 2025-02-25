@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <section class="sect">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/kalamanjeeri.png" class="logo" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i> 
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                  
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Book.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section class="about">
+        <div class="row">
+            <div class="col-4">
+<img src="images/1.png"">
+            </div>
+            <div class="col-8">
+<h2 class="title>
+    wdweewew
+</h2>
+<p class="desc">
+    wfdfdsfsdfds
+</p>
+</div>
+
+        </div>
+
+    </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+<script>
+const navbarCollapse = document.getElementById('navbarNav');
+const navbarToggler = document.querySelector('.navbar-toggler');
+const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+navbarCollapse.addEventListener('show.bs.collapse', () => {
+    gsap.fromTo(navbarCollapse, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5 });
+    navLinks.forEach((link, index) => {
+        gsap.fromTo(link, { opacity: 0, y: -20 }, { opacity: 1, y: 0, delay: index * 0.2, duration: 0.4 });
+    });
+});
+
+navbarCollapse.addEventListener('hide.bs.collapse', () => {
+    gsap.fromTo(navbarCollapse, { opacity: 1, y: 0 }, { opacity: 0, y: -20, duration: 0.5 });
+});
+
+navbarToggler.addEventListener('click', () => {
+    const icon = navbarToggler.querySelector('i');
+    if (icon.classList.contains('fa-bars')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times'); 
+    } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars'); 
+    }
+});
+
+
+
+
+
+
+
+
+</script>
+</html>

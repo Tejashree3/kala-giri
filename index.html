@@ -1,0 +1,259 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="loader">
+        <div class="spinner">
+<img src="./images/v21_629.png" class="main-i" alt="">
+
+        </div>
+    </div>
+    
+  <section class="first">
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/kalamanjeeri.png" class="logo" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i> 
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+              
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="book1.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+    <div class="bg-dark">
+
+      <div class="image-container ">
+          <img src="/images/umajinaik.png" alt="UmajiNaik Cover page" class="full-page-img"/>
+          <img src="/images/adyakrantiveer.png" alt="Krantiveer Image" class="onimg float-right"/>
+      </div>
+
+      <div class="text-container">
+          <h2 class="h2 text-center">एक अविस्मरणीय क्रांतिकारी</h2>
+          <div class="paragaph">
+
+              <p class="" id="typedtext">
+                राजे उमाजी नाईक यांचा पूर्णाकृती पुतळा हा केवळ एक कलाकृती नाही तर 
+                
+                एक अमरत्वाचे प्रतीक आहे. हा पुतळा भविष्यात नव्या पिढीला राजे उमाजी नाईक 
+                यांच्या जीवनाची आणि त्यांच्या योगदानाची प्रेरणा देत राहील. कला मंजिरीच्या 
+                या उपक्रमामुळे राजे उमाजी नाईक यांचे नाव सदैव लोकांच्या मनात अमर राहणार आहे.
+              </p>
+          </div>
+        </div>
+
+        <section class="container">
+            <div class="owl-carousel main-carousel owl-theme">
+                <div class="item">
+                    <div class="card p-3">
+                       <div class="owl-carousel image-carousel owl-theme">
+                            <div class="item"><img src="./images/statue-1.png" class="card-img-top" alt="Statue"></div>
+                            <div class="item"><img src="./images/1.png" class="card-img-top" alt="Statue"></div>
+
+                            <div class="item"><img src="./images/2.png" class="card-img-top" alt="Statue"></div>
+                            <div class="item"><img src="./images/3.png" class="card-img-top" alt="Statue"></div>
+                            <div class="item"><img src="./images/4.png" class="card-img-top" alt="Statue"></div>
+
+                        </div>
+                        <div class="card-body">
+                            <h3 class="title">Unicorn Sprinkles</h3>
+                            <p class="description">A fluffy fresh cooked donut covered by a creamy strawberry flavour with rainbow sprinkles.</p>
+                            <div class="price-div">
+                            <div class="price-quantity">
+                                <button class="btn minus">-</button>
+                                <h5 class="quantity">1</h5>
+                                <button class="btn plus">+</button>
+                            </div>
+                            <div class="">
+                                <h1 class="price">1600</h1>
+
+                            </div>
+                            </div>
+                            <button class="buy-now"><a href="./book1.html">
+
+                           Buy Now </a> </button>
+                        </div>
+                    </div>
+                </div>
+        
+               
+                </div>
+            </div>
+        </section>
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+    <script>
+ document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(() => {
+        document.getElementById("loader").style.display = "none";
+    }, 2500);
+});
+
+var aText = new Array(
+"राजे उमाजी नाईक यांचा पूर्णाकृती पुतळा  ", 
+"हा केवळ एक कलाकृती नाही तर  एक ",
+"अमरत्वाचे प्रतीक आहे. हा पुतळा भविष्यात  ",
+"नव्या पिढीला राजे उमाजी नाईक यांच्या  ",
+" जीवनाची आणि त्यांच्या योगदानाची प्रेरणा  ",
+"देत  राहील. कला मंजिरीच्या या उपक्रमामुळे",
+" राजे उमाजी नाईक यांचे नाव सदैव लोकांच्या ",
+"मनात अमर राहणार आहे."
+);
+var iSpeed = 70; 
+var iIndex = 0;
+var iArrLength = aText[0].length;
+var iScrollAt = 20; 
+ 
+var iTextPos = 0;
+var sContents = ''; 
+var iRow; 
+ 
+function typewriter()
+{
+ sContents =  ' ';
+ iRow = Math.max(0, iIndex-iScrollAt);
+ var destination = document.getElementById("typedtext");
+ 
+ while ( iRow < iIndex ) {
+  sContents += aText[iRow++] + '<br />';
+ }
+ destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+ if ( iTextPos++ == iArrLength ) {
+  iTextPos = 0;
+  iIndex++;
+  if ( iIndex != aText.length ) {
+   iArrLength = aText[iIndex].length;
+   setTimeout("typewriter()", 500);
+  }
+ } else {
+  setTimeout("typewriter()", iSpeed);
+ }
+}
+
+
+typewriter();
+
+
+        $(document).ready(function(){
+    $(".main-carousel").owlCarousel({
+        loop: false,
+        margin: 10,
+        nav: true,
+        dots: false,
+        autoplay: true,
+       
+        responsive: {
+            0: { items: 1 },
+            600: { items: 1 },
+            1000: { items: 3 }
+        }
+    });
+
+    $(".image-carousel").owlCarousel({
+        loop: false,
+        margin: 5,
+        nav: true,
+        dots: false,
+        autoplay: true,
+        items: 1
+    });
+
+
+    const basePrice = 1600; 
+
+$(".plus").click(function() {
+    let qty = $(this).siblings(".quantity");
+    let count = parseInt(qty.text()) + 1;
+    qty.text(count);
+    
+    $(".price").text(count * basePrice);
+});
+
+$(".minus").click(function() {
+    let qty = $(this).siblings(".quantity");
+    let count = parseInt(qty.text());
+    if (count > 1) {
+        count--;
+        qty.text(count);
+        
+        $(".price").text(count * basePrice);
+    }
+});
+
+});
+
+
+        const navbarCollapse = document.getElementById('navbarNav');
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+        navbarCollapse.addEventListener('show.bs.collapse', () => {
+            gsap.fromTo(navbarCollapse, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5 });
+            navLinks.forEach((link, index) => {
+                gsap.fromTo(link, { opacity: 0, y: -20 }, { opacity: 1, y: 0, delay: index * 0.2, duration: 0.4 });
+            });
+        });
+
+        navbarCollapse.addEventListener('hide.bs.collapse', () => {
+            gsap.fromTo(navbarCollapse, { opacity: 1, y: 0 }, { opacity: 0, y: -20, duration: 0.5 });
+        });
+
+        navbarToggler.addEventListener('click', () => {
+            const icon = navbarToggler.querySelector('i');
+            if (icon.classList.contains('fa-bars')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times'); 
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars'); 
+            }
+        });
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html> 
+
+
+
+
+
+

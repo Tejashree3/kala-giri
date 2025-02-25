@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./book.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+  integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+
+</style>
+<body>
+
+
+
+    <section class="first">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/kalamanjeeri.png" class="logo" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i> 
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                  
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="book1.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+
+    <section class="red">
+        <div class="row">
+<div class="red-class">
+
+    <img src="./images/KM3 1.png" class="red-img" alt="">
+</div>
+        </div>
+    </section>
+    <section class="form">
+        <form>
+            <div class="first-sec">
+    
+          
+            <h4 class="title">
+                Personal Details
+            </h4>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name"  placeholder="Enter name">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter phone number">
+              </div>
+            </div>
+            <div class="second-sec">
+    
+          
+                <h4 class="title">
+                    Address Details
+                </h4>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" class="form-control" id="address" placeholder="Enter address">
+                  </div>
+                  <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" class="form-control" id="city" placeholder="Enter city">
+                  </div>
+                  <div class="form-group">
+                    <label for="pincode">Pincode</label>
+                    <input type="text" class="form-control" id="pincode" placeholder="Enter pincode">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="state">State</label>
+                    <select class="form-control" id="state">
+                      <option value="">Select a state</option>
+                      <option value="Andhra Pradesh">Andhra Pradesh</option>
+                      <option value="Bihar">Bihar</option>
+                      <option value="California">California</option>
+                      <option value="Delhi">Delhi</option>
+                      <option value="Texas">Texas</option>
+                    </select>
+                  </div>
+                </div>
+
+<div class="next-btn">
+
+    <button type="submit" class="next">Next</button>
+</div>
+          </form>
+    </section>
+
+
+
+    <div class="modal fade" id="otpModal" tabindex="-1" aria-labelledby="otpModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-4">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">Please Enter 4-digit code</h5>
+                </div>
+                <div class="modal-body text-center">
+                    <p class="text-muted">We sent you a 4-digit code to you at</p>
+    
+                    <div class="d-flex justify-content-center gap-2">
+                        <input type="text" class="otp-input" maxlength="1">
+                        <input type="text" class="otp-input" maxlength="1">
+                        <input type="text" class="otp-input" maxlength="1">
+                        <input type="text" class="otp-input" maxlength="1">
+                    </div>
+    
+                  
+                    <button class="btn btn-primary w-100 mt-4" id="verifyOtpBtn">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <div class="success-container"   id="successModal" style="display: none;">
+                <div class="main-div">
+
+                    <div class="success-circle">
+                        <i class="fa-solid fa-circle-check fa-3x text-success"></i>
+                    </div>
+                    <p class="success-text text-success mt-2">OTP Verified Successfully!</p>
+                </div>
+            </div>
+           
+
+<div id="errorMessage" class="error-container" style="display: none;">
+    <div class="main-div">
+
+    <div class="error-circle">
+        <i class="fa-solid fa-circle-xmark fa-3x text-danger"></i>
+    </div>
+    <p class="error-text text-danger mt-2">Invalid OTP! Try Again.</p>
+    </div>
+</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+<script>
+
+    const navbarCollapse = document.getElementById('navbarNav');
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+        navbarCollapse.addEventListener('show.bs.collapse', () => {
+            gsap.fromTo(navbarCollapse, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5 });
+            navLinks.forEach((link, index) => {
+                gsap.fromTo(link, { opacity: 0, y: -20 }, { opacity: 1, y: 0, delay: index * 0.2, duration: 0.4 });
+            });
+        });
+
+        navbarCollapse.addEventListener('hide.bs.collapse', () => {
+            gsap.fromTo(navbarCollapse, { opacity: 1, y: 0 }, { opacity: 0, y: -20, duration: 0.5 });
+        });
+
+        navbarToggler.addEventListener('click', () => {
+            const icon = navbarToggler.querySelector('i');
+            if (icon.classList.contains('fa-bars')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times'); 
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars'); 
+            }
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+    const phoneInput = document.getElementById("phone");
+    const otpInputs = document.querySelectorAll(".otp-input");
+    const verifyOtpBtn = document.getElementById("verifyOtpBtn");
+    const phoneDisplay = document.querySelector("#otpModal .fw-bold");
+
+    const successModal = new bootstrap.Modal(document.getElementById("successModal"));
+    const otpModal = new bootstrap.Modal(document.getElementById("otpModal"));
+    const errorMessage = document.getElementById("errorMessage");
+
+    phoneInput.addEventListener("input", function () {
+        const phoneNumber = phoneInput.value.trim();
+        if (phoneNumber.length === 10) {
+            phoneDisplay.innerHTML = `(+91) ${phoneNumber} <span class="edit-text" style="cursor:pointer; color:blue;">Edit</span>`;
+            otpModal.show();
+        }
+    });
+
+    otpInputs.forEach((input, index) => {
+        input.addEventListener("input", (e) => {
+            if (e.target.value.length === 1 && index < otpInputs.length - 1) {
+                otpInputs[index + 1].focus();
+            }
+        });
+
+        input.addEventListener("keydown", (e) => {
+            if (e.key === "Backspace" && e.target.value === "" && index > 0) {
+                otpInputs[index - 1].focus();
+            }
+        });
+    });
+
+    verifyOtpBtn.addEventListener("click", function () {
+        let otp = "";
+        otpInputs.forEach(input => otp += input.value);
+        const correctOTP = "1234";
+
+        errorMessage.style.display = "none"; 
+
+        if (otp === correctOTP) {
+            otpModal.hide();
+            setTimeout(() => {
+            document.getElementById("successModal").style.display = "flex"; 
+
+            setTimeout(() => {
+                document.getElementById("successModal").style.display = "none"; 
+            }, 3000);
+
+        }, 500); 
+        } else {
+            otpModal.hide();
+
+            setTimeout(() => {
+            document.getElementById("errorMessage").style.display = "flex";   
+
+            setTimeout(() => {
+                document.getElementById("errorMessage").style.display = "none"; 
+            }, 3000);
+
+        }, 500);  
+    
+    
+    }
+    });
+
+    phoneDisplay.addEventListener("click", function (event) {
+        if (event.target.classList.contains("edit-text")) {
+            otpModal.hide();
+            phoneInput.focus();
+        }
+    });
+});
+
+</script>
+</html>
+
+
+

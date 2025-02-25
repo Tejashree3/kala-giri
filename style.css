@@ -1,0 +1,275 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Caveat:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Lato", serif;
+        background: #000000;
+
+        color: #333; 
+        line-height: 1.6;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+    }
+
+
+    #loader {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+    }
+    
+    img.main-i {
+        display: flex
+    ;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+    }
+
+
+.logo{
+    width: 100%;
+    max-width: 60px;
+}
+    .first {
+        background: white;
+    }
+
+    .navbar {
+        transition: background-color 0.5s ease;
+    }
+
+    .navbar-toggler {
+        border: none; 
+        background:  linear-gradient(95.15deg, #F9D03F 17.18%, #E9B32A 71.35%);
+        ;
+        font-size: 1.5rem; 
+    }
+
+    .navbar-toggler i {
+        color: #fff;
+    }
+
+    .navbar-collapse {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease-in-out, visibility 0s 0.5s;
+    }
+
+    .navbar-collapse.show {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .navbar-nav .nav-link {
+        color: black;
+        padding-left: 10px;
+        transition: color 0.3s ease;
+    }
+
+    .navbar-collapse.show .navbar-nav .nav-link:hover {
+        background: linear-gradient(95.15deg, #F9D03F 17.18%, #E9B32A 71.35%);
+    }
+.image-container {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 56px);
+    overflow: hidden;
+  }
+  
+  .full-page-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  
+  .onimg {
+    position: absolute;
+    top: 20%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 999;
+    max-width: 15%; 
+    max-height: 15vh;
+  }
+  
+  .text-container {
+    width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    padding: 20px;
+    color: white;
+    position: relative;
+    font-family: "Anek Devanagari", serif;
+
+    display: inline-block;
+    background: radial-gradient(circle, rgba(247, 181, 56, 0.4) -21%, rgba(0,0,0,0) 44%);
+    border-radius: 50%;
+    padding: 40px;
+    backdrop-filter: blur(120px);
+  }
+  
+  .paragaph {
+    display: flex;
+    height:200px;
+    justify-content: center;
+    align-items: center;
+}
+  .text-container1 {
+  padding: 20px;
+  color: white;
+  position: relative;
+  display: inline-block;
+  background: radial-gradient(circle, rgba(247, 181, 56, 0.4) -21%, rgba(0,0,0,0) 44%);
+  border-radius: 50%;
+  padding: 40px;
+  }
+  span {
+    font-size: 18px;
+    background: white;
+    color: black;
+    padding: 0px 9px 5px;
+    border-radius: 50%;
+}
+
+
+
+
+
+  .h2 {
+  color: #F7B538;
+  
+  }
+  .card.p-3{
+    background-color: transparent;
+    border:transparent
+  }
+  .owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    width: 190px;
+  }
+  .owl-carousel .item {
+    text-align: center;
+}
+
+.card {
+    background: transparent;
+    border: none;
+    color: white;
+    text-align: center;
+}
+
+.card-img-top {
+    width: 190px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.card-body {
+    padding: 15px;
+    background-color: #212529;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 800;
+    text-align: left;
+}
+
+.description {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: left;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 235px;
+}
+
+.price-quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    border: 1px solid #F7B538;
+    padding: 1px 9px;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 63%;
+}
+.price {
+    font-family: "Anek Devanagari", serif;
+    font-size: 24px;
+    padding-top: 20px;
+    font-weight: 500;
+}
+.buy-now {
+    font-family: "Anek Devanagari", serif;
+font-size: 24px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #F7B538;
+    color: black;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.price-div {
+    display: flex
+;
+    align-items: center;
+    justify-content: space-between;
+}
+button.btn.plus {
+    color: #F7B538;
+}
+button.btn.minus {
+    color: #F7B538;
+}
+
+.owl-carousel .owl-item img:hover{
+    background:radial-gradient(circle, rgba(247, 181, 56, 0.4) -21%, rgba(0,0,0,0) 44%) ;
+}
+
+
+h5 {
+    font-size: 19px;
+    color: #F9D03F;
+    border-radius: 50%;
+    padding: 10px 9px 0px;
+}
+
+@media only screen and (max-width: 370px) {
+    .h2 {
+       
+        font-size: 20px;
+        height: 100px;
+    }}
