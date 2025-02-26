@@ -144,10 +144,9 @@
   padding: 40px;
   }
   span {
-    font-size: 18px;
-    background: white;
-    color: black;
-    padding: 0px 9px 5px;
+    font-size: 40px;
+    color: white;
+    padding: 2px 9px;
     border-radius: 50%;
 }
 
@@ -159,6 +158,17 @@
   color: #F7B538;
   
   }
+
+
+  .owl-theme .owl-nav {
+    margin-top: -10px;
+    margin-bottom: -24px;
+}
+
+
+button.navbar-toggler {
+    padding: 3px 8px;
+}
   .card.p-3{
     background-color: transparent;
     border:transparent
