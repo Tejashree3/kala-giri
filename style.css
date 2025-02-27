@@ -10,7 +10,7 @@
     }
 
     body {
-        font-family: "Lato", serif;
+        font-family: "Anek Devanagari", serif;
         background: #000000;
 
         color: #333; 
@@ -35,14 +35,26 @@
         left: 0;
     }
     
-    img.main-i {
-        display: flex
-    ;
-        justify-content: center;
-        align-items: center;
-        width: 150px;
-    }
+   
+img.main-i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    transform: scale(0); /* Start at scale 0 */
+    animation: scaleUp 2s ease-in-out forwards; /* Smooth animation */
+}
 
+@keyframes scaleUp {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
 
 .logo{
     width: 100%;
